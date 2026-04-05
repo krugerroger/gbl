@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { href: "/tarifs", label: "Mes Tarifs" },
   { href: "/blog", label: "Blog / Actualités" },
   { href: "/galerie", label: "Ma Galerie" },
-  { href: "/temoignages", label: "Commentaires & Témoignages" },
+  { href: "/commentaires-temoignages", label: "Commentaires & Témoignages" },
   { href: "/cgv", label: "Conditions & FaQs" },
   { href: "/shop", label: "Boutique" },
   { href: "/reservation", label: "Réservation" },
@@ -42,14 +42,6 @@ export function MobileNav() {
           </a>
           
           <div className="flex items-center gap-5">
-            <button className="relative text-zinc-500 hover:text-amber-500 transition-colors">
-              <Heart size={18} strokeWidth={1.5} />
-              <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-amber-600 text-[10px] text-white font-sans font-bold">0</span>
-            </button>
-            <button className="relative text-zinc-500 hover:text-amber-500 transition-colors">
-              <ShoppingBag size={18} strokeWidth={1.5} />
-              <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-amber-600 text-[10px] text-white font-sans font-bold">0</span>
-            </button>
             
             <button
               type="button"

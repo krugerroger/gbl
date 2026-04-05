@@ -8,11 +8,11 @@ export default function TarifsEtPrestations() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-zinc-400 font-serif selection:bg-amber-500/30">
       
-      {/* HEADER MINIMALISTE */}
+      {/* HEADER */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden border-b border-zinc-900">
-      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0">
           <Image 
-            src="/images/1.jpeg" // Remplacez par votre image de fond
+            src="/images/gabriella/photo-15.jpeg"
             alt="Ambiance luxueuse"
             fill
             className="object-cover opacity-40 grayscale"
@@ -21,19 +21,19 @@ export default function TarifsEtPrestations() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]/80" />
         </div>
         <div className="relative z-10 text-center px-6">
-        <span className="text-[10px] uppercase tracking-[0.5em] text-amber-600 font-sans font-bold mb-4 block">
-          L'Excellence du Moment
-        </span>
-        <h1 className="text-4xl md:text-6xl text-white italic tracking-tighter mb-8">
-          Mes Prestations & Tarifs
-        </h1>
-        <div className="mx-auto h-[1px] w-12 bg-amber-900" />
+          <span className="text-[10px] uppercase tracking-[0.5em] text-amber-600 font-sans font-bold mb-4 block">
+            L'Excellence du Moment
+          </span>
+          <h1 className="text-4xl md:text-6xl text-white italic tracking-tighter mb-8">
+            Mes Prestations & Tarifs
+          </h1>
+          <div className="mx-auto h-[1px] w-12 bg-amber-900" />
         </div>
       </section>
 
       <main className="max-w-5xl mx-auto px-6 py-20">
-        
-        {/* SECTION 1 : LES RENDEZ-VOUS GALANTS */}
+
+        {/* SECTION 1 : RENDEZ-VOUS GALANTS */}
         <section className="space-y-16 mb-32">
           <div className="text-center space-y-4">
             <h2 className="text-xs uppercase tracking-[0.4em] text-amber-600 font-sans font-bold">Rendez-vous Galants</h2>
@@ -44,25 +44,25 @@ export default function TarifsEtPrestations() {
             {[
               { 
                 titre: "Rendez-vous galant – 1h", 
-                detail: "2 moments intimes accompagnés d’un massage",
+                detail: "2 moments intimes accompagnés d'un massage",
                 prixJ: "150€", prixS: "170€",
-                desc: "Nous débutons par un moment d’échange autour d’un verre, suivi d’une douche et d’une parenthèse sensuelle."
+                desc: "Nous débutons par un moment d'échange autour d'un verre, suivi d'une douche et d'une parenthèse sensuelle."
               },
               { 
                 titre: "Rendez-vous galant – 1h30", 
-                detail: "3 moments intimes accompagnés d’un massage",
+                detail: "3 moments intimes accompagnés d'un massage",
                 prixJ: "240€", prixS: "250€",
                 desc: "Une rencontre progressive, entre complicité, détente et plaisir partagé."
               },
               { 
                 titre: "Rendez-vous galant – 2h", 
-                detail: "3 à 4 moments intimes accompagnés d’un massage",
+                detail: "3 à 4 moments intimes accompagnés d'un massage",
                 prixJ: "300€", prixS: "320€",
                 desc: "Le temps idéal pour se découvrir pleinement et savourer chaque instant."
               },
               { 
                 titre: "Rendez-vous galant – 3h", 
-                detail: "4 moments intimes accompagnés d’un massage",
+                detail: "4 moments intimes accompagnés d'un massage",
                 prixJ: "400€", prixS: "420€",
                 desc: "Une immersion totale dans un univers de sensualité et de raffinement."
               }
@@ -100,16 +100,19 @@ export default function TarifsEtPrestations() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
+
             {/* Après-midi détente */}
             <div className="bg-zinc-950/40 p-10 border border-zinc-900 space-y-6 group hover:border-amber-900/30 transition-all">
               <div className="flex justify-between items-start">
                 <Clock className="text-amber-700" size={24} strokeWidth={1.5} />
                 <span className="text-2xl text-white font-sans">550€</span>
               </div>
-              <h3 className="text-xl text-white italic">Après-midi détente (4h)</h3>
+              <div className="space-y-1">
+                <h3 className="text-xl text-white italic">Après-midi détente</h3>
+                <p className="text-[9px] font-sans uppercase tracking-widest text-amber-900 font-bold">4h — avant 19h</p>
+              </div>
               <p className="text-sm text-zinc-500 leading-relaxed italic">
-                Un moment de relaxation : spa, hammam ou massage, suivi d’un déjeuner ou d’un verre, avant de prolonger la rencontre en toute intimité. 
-                <span className="block mt-2 text-[10px] font-sans text-amber-900 uppercase tracking-widest font-bold">Valable avant 19h</span>
+                Un moment de relaxation et de plaisir : spa, hammam ou massage, suivi d'un déjeuner ou d'un verre, avant de prolonger la rencontre en toute intimité.
               </p>
             </div>
 
@@ -119,9 +122,12 @@ export default function TarifsEtPrestations() {
                 <Utensils className="text-amber-700" size={24} strokeWidth={1.5} />
                 <span className="text-2xl text-white font-sans">670€</span>
               </div>
-              <h3 className="text-xl text-white italic">Soirée Délice (4h)</h3>
+              <div className="space-y-1">
+                <h3 className="text-xl text-white italic">Soirée Délice</h3>
+                <p className="text-[9px] font-sans uppercase tracking-widest text-amber-900 font-bold">20h – minuit · 4h</p>
+              </div>
               <p className="text-sm text-zinc-500 leading-relaxed italic">
-                De 20h à minuit. 2h de dîner suivies de 2h de moments sensuels. Une soirée élégante pour éveiller les sens en douceur.
+                2h de dîner suivies de 2h de moments sensuels. Une soirée élégante et intime pour éveiller les sens en douceur.
               </p>
             </div>
 
@@ -134,9 +140,12 @@ export default function TarifsEtPrestations() {
                 <Moon className="text-amber-600" size={24} strokeWidth={1.5} />
                 <span className="text-2xl text-amber-500 font-sans">720€</span>
               </div>
-              <h3 className="text-xl text-white italic">Soirée Torride (5h)</h3>
+              <div className="space-y-1">
+                <h3 className="text-xl text-white italic">Soirée Torride</h3>
+                <p className="text-[9px] font-sans uppercase tracking-widest text-amber-900 font-bold">20h – 1h · 5h</p>
+              </div>
               <p className="text-sm text-zinc-400 leading-relaxed italic">
-                Ma formule favorite : de 20h à 01h. Un délicieux dîner suivi de 3h de moments intenses et passionnés. Inoubliable.
+                2h de dîner suivies de 3h de moments intenses. Ma formule favorite : un délicieux dîner suivi d'une nuit passionnée et inoubliable.
               </p>
             </div>
 
@@ -146,11 +155,18 @@ export default function TarifsEtPrestations() {
                 <Coffee className="text-amber-700" size={24} strokeWidth={1.5} />
                 <span className="text-2xl text-white font-sans">800€</span>
               </div>
-              <h3 className="text-xl text-white italic">Nuit Complète (12h)</h3>
+              <div className="space-y-1">
+                <h3 className="text-xl text-white italic">Nuit Complète</h3>
+                <p className="text-[9px] font-sans uppercase tracking-widest text-amber-900 font-bold">20h – 8h · 12h</p>
+              </div>
               <p className="text-sm text-zinc-500 leading-relaxed italic">
-                De 20h à 08h. Dîner, nuit sensuelle et petit-déjeuner. Un temps de repos de minimum 5h est prévu.
+                Dîner, nuit sensuelle et petit-déjeuner. Nous commençons par un dîner avant de partager une nuit sensuelle. Un temps de repos de minimum 5h est prévu.
+                <span className="block mt-3 text-[10px] not-italic font-sans text-zinc-600 uppercase tracking-widest">
+                  Merci de prévoir le petit-déjeuner.
+                </span>
               </p>
             </div>
+
           </div>
         </section>
 
@@ -160,7 +176,6 @@ export default function TarifsEtPrestations() {
             <ShieldCheck size={20} />
             <span className="text-[10px] font-sans uppercase tracking-[0.3em] font-bold mt-1">Honneur & Discrétion Absolue</span>
           </div>
-          
           <div className="space-y-8">
             <p className="text-zinc-500 italic max-w-xl mx-auto">
               "Chaque instant est précieux. Je m'assure que notre rencontre soit à la hauteur de vos attentes les plus raffinées."
@@ -176,7 +191,6 @@ export default function TarifsEtPrestations() {
 
       </main>
 
-      {/* FOOTER */}
       <footer className="py-20 border-t border-zinc-900 text-center">
         <p className="text-[10px] text-zinc-800 uppercase tracking-[0.5em] font-sans">
           Gabriella — L'élégance de l'intimité

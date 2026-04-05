@@ -137,7 +137,7 @@ export default function Home() {
 
             <p className="border-b border-zinc-900 py-6">
               Je saurai m’adapter à toutes vos envies, il vous suffira pour ce faire de m’en faire part sans plus attendre ! 
-              Vous pouvez lire mes jeux érotiques et scénarios coquins sur ma page <Link href="/fantasmes" className="text-amber-600 underline">« Fantasmes »</Link>
+              Vous pouvez lire mes jeux érotiques et scénarios coquins sur ma page <Link href="/pratiques" className="text-amber-600 underline">« Fantasmes »</Link>
             </p>
 
             <p className="pt-6 text-white text-center italic font-serif">

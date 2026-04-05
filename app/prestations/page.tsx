@@ -16,7 +16,7 @@ export default function Prestations() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden border-b border-zinc-900">
       <div className="absolute inset-0 z-0">
           <Image 
-            src="/images/1.jpeg" // Remplacez par votre image de fond
+            src="/images/gabriella/photo-23.jpeg" // Remplacez par votre image de fond
             alt="Ambiance luxueuse"
             fill
             className="object-cover opacity-40 grayscale"
