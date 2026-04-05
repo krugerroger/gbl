@@ -8,7 +8,7 @@ export const articles = [
     categorie: "Art de Vivre",
     readTime: "5 min de lecture",
     likes: 214,
-    image: "/images/gabriella/photo-0.jpeg",
+    image: "/images/gabriella/photo-28.jpeg",
     contenu: [
       {
         type: "intro",
