@@ -15,7 +15,7 @@ export default function Galerie() {
     id: i,
     src: `/images/gabriella/photo-${i + 1}.jpeg`,
     category: i % 3 === 0 ? 'boudoir' : i % 3 === 1 ? 'lifestyle' : 'lingerie',
-    alt: `Gabriella - Shooting Session ${i + 1}`
+    alt: `Gabriella - Escorte Indépendante à Paris ${i + 1}`
   }));
 
   const filteredPhotos = filter === 'all' 
@@ -115,7 +115,7 @@ export default function Galerie() {
             <button onClick={prevImage} className="absolute left-4 text-white/20 hover:text-amber-500 transition-colors hidden md:block z-[110]"><ChevronLeft size={48} /></button>
 
             <div className="relative w-full h-full max-w-4xl max-h-[80vh] pointer-events-none select-none">
-              <Image src={photos[selectedImageIndex].src} alt="Agrandissement" fill className="object-contain animate-in zoom-in-95 duration-300" priority />
+              <Image src={photos[selectedImageIndex].src} alt="Gabriella — Escorte Indépendante à Paris" fill className="object-contain animate-in zoom-in-95 duration-300" priority />
               <div className="absolute -bottom-12 left-0 right-0 text-center">
                 <p className="text-white italic text-lg">Gabriella — No. {selectedImageIndex + 1}</p>
                 <p className="text-[10px] uppercase tracking-[0.4em] text-amber-900 font-sans">Série {photos[selectedImageIndex].category}</p>

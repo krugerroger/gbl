@@ -157,7 +157,7 @@ export default function Home() {
             <Image 
               className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700 scale-[1.01] group-hover:scale-105" 
               src="/images/1.jpeg" 
-              alt="Photo de Gabriella" 
+              alt="Gabriella, escort indépendante de luxe et masseuse professionnelle"
               width={500} 
               height={1000} 
             />

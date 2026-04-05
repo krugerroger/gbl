@@ -14,7 +14,7 @@ export default function Revelations() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/1.jpeg" // Remplacez par votre image de fond
-            alt="Ambiance luxueuse"
+            alt="Gabriella Indépendante, escort indépendante de luxe et masseuse professionnelle"
             fill
             className="object-cover opacity-40 grayscale"
             priority

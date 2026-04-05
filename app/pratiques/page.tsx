@@ -12,7 +12,7 @@ export default function Pratiques() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/gabriella/photo-3.jpeg" // Remplacez par votre image de fond
-            alt="Ambiance luxueuse"
+            alt="Gabriella, escort indépendante de luxe et masseuse professionnelle"
             fill
             className="object-cover opacity-40 grayscale"
             priority
