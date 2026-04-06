@@ -37,9 +37,13 @@ export const metadata: Metadata = {
     "Rencontre intime", 
     "Expérience haut de gamme"
   ],
-  authors: [{ name: "Gabriella" }],
-  creator: "Gabriella",
+  authors: [{ name: "Gabriella Indépendante" }],
+  creator: "Gabriella Indépendante",
   metadataBase: new URL("https://www.gabriellaindependante.com"), // Remplace par ton vrai domaine
+
+  alternates: {
+    canonical: "/",
+  },
   
   // OpenGraph (pour le partage sur WhatsApp, X, etc.)
   openGraph: {
@@ -71,9 +75,11 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,

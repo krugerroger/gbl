@@ -548,7 +548,7 @@ export default function Reservation() {
           <MapPin className="mx-auto text-amber-900" size={32} strokeWidth={1} />
           <h2 className="text-2xl text-white italic">Confidentialité du Lieu</h2>
           <p className="max-w-2xl mx-auto text-zinc-500 italic">
-            Je vous reçois dans un boudoir privé situé dans le <strong className="text-white not-italic">8ème arrondissement de Paris</strong>. 
+            Je vous reçois dans un boudoir privé. 
             L'adresse exacte vous sera transmise par SMS après vérification et validation de votre recharge.
           </p>
         </section>
@@ -556,7 +556,7 @@ export default function Reservation() {
 
       <footer className="py-20 border-t border-zinc-900 text-center">
         <p className="text-[10px] text-zinc-800 uppercase tracking-[0.5em] font-sans">
-          Gabriella — Paris — 2026
+          Gabriella — France — 2026
         </p>
       </footer>
     </div>

@@ -130,7 +130,7 @@ export default function Contact() {
           <div className="flex justify-center gap-12">
              <div className="flex flex-col items-center gap-3">
                 <MapPin className="text-amber-900" size={24} />
-                <span className="text-[9px] uppercase tracking-widest text-zinc-600">Paris, 8ème</span>
+                <span className="text-[9px] uppercase tracking-widest text-zinc-600">France</span>
              </div>
              <div className="flex flex-col items-center gap-3">
                 <Clock className="text-amber-900" size={24} />

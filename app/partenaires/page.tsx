@@ -147,7 +147,7 @@ export default function Partenaires() {
 
       <footer className="py-20 border-t border-zinc-900 text-center">
         <p className="text-[10px] text-zinc-800 uppercase tracking-[0.5em] font-sans">
-          Gabriella — Paris — 2026
+          Gabriella — France — 2026
         </p>
       </footer>
     </div>

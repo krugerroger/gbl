@@ -5,6 +5,10 @@ import Image from "next/image";
 import { Sparkles, Star, MapPin, ShieldCheck, Heart } from "lucide-react";
 
 export default function Home() {
+
+      const message = encodeURIComponent(
+  "Bonjour Gabriella 👋,\n\nJe vous contacte via votre site internet.\n\nJe suis intéressé(e) par vos prestations et j’aimerais avoir plus d’informations concernant vos disponibilités, vos services et vos tarifs.\n\nMerci 🙂"
+);
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-zinc-400 font-serif selection:bg-amber-500/30">
       
@@ -173,8 +177,12 @@ export default function Home() {
 
         {/* SOCIALS */}
         <div className="mt-16 flex flex-wrap items-center justify-center gap-4">
-          {["Telegram", "WhatsApp", "Facebook", "Instagram", "X"].map((label) => (
-            <SocialPill key={label} label={label} />
+          {
+          [
+            { label: "Telegram", url: "https://t.me/gabriellaindependante" }, 
+            { label: "WhatsApp", url: `https://wa.me/33780990692?text=${message}` },
+          ].map((social) => (
+            <SocialPill key={social.label} label={social.label} url={social.url} />
           ))}
         </div>
 
@@ -200,10 +208,10 @@ export default function Home() {
   );
 }
 
-function SocialPill({ label }: { label: string }) {
+function SocialPill({ label, url }: { label: string; url: string }) {
   return (
-    <span className="rounded-full border border-zinc-900 px-5 py-2 text-[10px] uppercase tracking-widest text-zinc-500 font-sans hover:border-amber-900 hover:text-amber-500 transition-all cursor-pointer">
+    <Link href={url} target="_blank" rel="noopener noreferrer" className="rounded-full border border-zinc-900 px-5 py-2 text-[10px] uppercase tracking-widest text-zinc-500 font-sans hover:border-amber-900 hover:text-amber-500 transition-all cursor-pointer">
       {label}
-    </span>
+    </Link>
   );
 }
