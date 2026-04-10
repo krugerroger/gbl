@@ -205,7 +205,7 @@ export default function ShopClient() {
         {/* PHILOSOPHIE */}
         <div className="grid md:grid-cols-2 gap-20 items-center">
           <div className="relative aspect-square overflow-hidden border border-zinc-900 group">
-            <Image src="/images/1.jpeg" alt="Gabriella, escort indépendante de luxe et masseuse professionnelle" fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" />
+            <Image src="/images/1.jpeg" unoptimized alt="Gabriella, escort indépendante de luxe et masseuse professionnelle" fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
           </div>
           <div className="space-y-8">

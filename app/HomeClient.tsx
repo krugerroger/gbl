@@ -163,7 +163,7 @@ export default function HomeClient() {
               src="/images/1.jpeg" 
               alt="Gabriella, escort indépendante de luxe et masseuse professionnelle"
               width={500} 
-              height={1000} 
+              height={1000}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
           </div>

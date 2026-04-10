@@ -96,7 +96,7 @@ export default function GalerieClient() {
                    <p className="text-white italic text-sm">Gabriella No. {photo.id + 1}</p>
                 </div>
               </div>
-              <Image src={photo.src} alt={photo.alt} width={500} height={700} loading="lazy" className="w-full h-auto object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 ease-in-out" />
+              <Image src={photo.src} alt={photo.alt} width={500} height={700} loading="lazy" unoptimized className="w-full h-auto object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 ease-in-out" />
             </div>
           ))}
         </div>
@@ -114,7 +114,7 @@ export default function GalerieClient() {
             <button onClick={prevImage} className="absolute left-4 text-white/20 hover:text-amber-500 transition-colors hidden md:block z-[110]"><ChevronLeft size={48} /></button>
 
             <div className="relative w-full h-full max-w-4xl max-h-[80vh] pointer-events-none select-none">
-              <Image src={photos[selectedImageIndex].src} alt="Gabriella — Escorte Indépendante à Paris" fill className="object-contain animate-in zoom-in-95 duration-300" priority />
+              <Image src={photos[selectedImageIndex].src} unoptimized alt="Gabriella — Escorte Indépendante à Paris" fill className="object-contain animate-in zoom-in-95 duration-300" priority />
               <div className="absolute -bottom-12 left-0 right-0 text-center">
                 <p className="text-white italic text-lg">Gabriella — No. {selectedImageIndex + 1}</p>
                 <p className="text-[10px] uppercase tracking-[0.4em] text-amber-900 font-sans">Série {photos[selectedImageIndex].category}</p>

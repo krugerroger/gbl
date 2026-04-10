@@ -74,7 +74,7 @@ export default function CartDrawer() {
                 <li key={item.nom} className="flex gap-5 px-8 py-6">
                   {/* Image */}
                   <div className="relative w-20 h-24 shrink-0 border border-zinc-900 overflow-hidden">
-                    <Image src={item.img} alt={item.nom} fill className="object-cover" />
+                    <Image src={item.img} unoptimized alt={item.nom} fill className="object-cover" />
                   </div>
 
                   {/* Infos */}
