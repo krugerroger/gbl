@@ -1,9 +1,30 @@
-
+import type { Metadata } from "next";
 import Link from "next/link";
 import { use } from "react";
 import { ChevronLeft, Share2, Bookmark, Eye, Calendar, Heart } from "lucide-react";
 import { notFound } from "next/navigation";
 import { articles } from "@/app/data/articles";
+import { createArticleMetadata } from "@/app/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ article: string }>;
+}): Promise<Metadata> {
+  const { article: slug } = await params;
+  const post = articles.find((a) => a.id === slug);
+  if (!post) {
+    return { title: "Article" };
+  }
+  const ogPath =
+    post.image.startsWith("/") ? (post.image as `/${string}`) : "/og/default.jpg";
+  return createArticleMetadata({
+    title: `${post.titre} — Journal`,
+    description: post.extrait,
+    path: `/blog/${slug}`,
+    ogImagePath: ogPath,
+  });
+}
 
 // ─── generateStaticParams ────────────────────────────────────────────────────
 // Tells Next.js which slugs to pre-render at build time (SSG).
