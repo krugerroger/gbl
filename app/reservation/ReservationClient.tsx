@@ -183,7 +183,7 @@ export default function ReservationClient() {
             <section className="space-y-8">
               <h2 className="text-white text-xs uppercase tracking-[0.4em] font-sans font-bold">Contact Direct</h2>
               <div className="space-y-6">
-                <a href="tel:+33780990692" className="flex items-center gap-4 group">
+                <a href="tel:+33780912442" className="flex items-center gap-4 group">
                   <div className="w-10 h-10 border border-zinc-900 flex items-center justify-center group-hover:border-amber-900 transition-colors">
                     <Phone size={16} className="text-amber-700" />
                   </div>
@@ -466,7 +466,7 @@ export default function ReservationClient() {
                 {/* Boutons de contact */}
                 <div className="grid sm:grid-cols-2 gap-4">
                   <a
-                    href={`https://wa.me/33780990692?text=${message}`}
+                    href={`https://wa.me/33780912442?text=${message}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 px-8 py-5 border border-zinc-900 hover:border-amber-900 text-white uppercase tracking-[0.3em] text-[10px] font-bold font-sans transition-all duration-300"
@@ -517,7 +517,7 @@ export default function ReservationClient() {
                   </div>
                   <div className="p-6 bg-amber-900/5 border border-amber-900/20 italic text-sm">
                     <p><strong>Option Discrétion :</strong> Achetez votre recharge en bureau de tabac ou en ligne, puis transmettez-la par whatsapp ou telegram avec vos disponibilités :</p>
-                    <p className="text-amber-700 mt-2 font-sans text-xs select-all"><a href={`https://wa.me/33780990692`} target="_blank" rel="noopener noreferrer" className="hover:text-amber-500">+33 7 80 99 06 92</a> | <a href="https://t.me/gabriellaindependante" target="_blank" rel="noopener noreferrer" className="hover:text-amber-500">@Gabriellaindependante</a></p>
+                    <p className="text-amber-700 mt-2 font-sans text-xs select-all"><a href={`https://wa.me/33780912442`} target="_blank" rel="noopener noreferrer" className="hover:text-amber-500">+33 7 80 91 24 42</a> | <a href="https://t.me/gabriellaindependante" target="_blank" rel="noopener noreferrer" className="hover:text-amber-500">@Gabriellaindependante</a></p>
                   </div>
                 </div>
 

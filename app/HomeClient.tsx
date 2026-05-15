@@ -180,7 +180,7 @@ export default function HomeClient() {
           {
           [
             { label: "Telegram", url: "https://t.me/gabriellaindependante" }, 
-            { label: "WhatsApp", url: `https://wa.me/33780990692?text=${message}` },
+            { label: "WhatsApp", url: `https://wa.me/33780912442?text=${message}` },
           ].map((social) => (
             <SocialPill key={social.label} label={social.label} url={social.url} />
           ))}

@@ -35,12 +35,12 @@ export default function ContactClient() {
             <div className="space-y-10">
               <h2 className="text-white text-xs uppercase tracking-[0.4em] font-sans font-bold">Canaux Privilégiés</h2>
               <div className="grid sm:grid-cols-2 gap-8">
-                <a href="tel:+33780990692" className="group space-y-3">
+                <a href="tel:+33780912442" className="group space-y-3">
                   <div className="w-12 h-12 border border-zinc-900 flex items-center justify-center group-hover:border-amber-900 transition-all duration-500">
                     <Phone size={18} className="text-amber-700" />
                   </div>
                   <span className="block text-[10px] uppercase tracking-widest text-zinc-600 font-sans">Téléphone</span>
-                  <p className="text-white group-hover:text-amber-500 transition-colors">+33 7 80 99 06 92</p>
+                  <p className="text-white group-hover:text-amber-500 transition-colors">+33 7 80 91 24 42</p>
                 </a>
 
                 <a href="https://t.me/gabriellaindependante" className="group space-y-3">
@@ -59,7 +59,7 @@ export default function ContactClient() {
                   <a href="mailto:gabriellaindependante@gmail.com" className="text-white italic text-sm">gabriellaindependante@gmail.com</a>
                 </div> */}
 
-                <a  href={`https://wa.me/33780990692?text=${message}`}
+                <a  href={`https://wa.me/33780912442?text=${message}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group space-y-3">
@@ -67,7 +67,7 @@ export default function ContactClient() {
                     <MessageCircle size={18} className="text-amber-700" />
                   </div>
                   <span className="block text-[10px] uppercase tracking-widest text-zinc-600 font-sans">Whatsapp</span>
-                  <p className="text-white group-hover:text-amber-500 transition-colors italic">+33 7 80 99 06 92</p>
+                  <p className="text-white group-hover:text-amber-500 transition-colors italic">+33 7 80 91 24 42</p>
                 </a>
               </div>
             </div>
