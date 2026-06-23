@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   keywords: [
     "Escorte indépendante Paris",
     "Escorte indépendante",
+    "Escort independante",
     "Escorte de luxe", 
     "Rencontre sensuelle", 
     "Massage érotique", 

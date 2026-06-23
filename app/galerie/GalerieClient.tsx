@@ -10,7 +10,7 @@ export default function GalerieClient() {
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
-  const photos = Array.from({ length: 50 }).map((_, i) => ({
+  const photos = Array.from({ length: 36 }).map((_, i) => ({
     id: i,
     src: `/images/gabriella/photo-${i + 1}.jpeg`,
     category: i % 3 === 0 ? 'boudoir' : i % 3 === 1 ? 'lifestyle' : 'lingerie',

@@ -12,7 +12,7 @@ export default function HistoireClient() {
         <div className="absolute inset-0 z-0 opacity-40">
            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0a]/80 to-[#0a0a0a]" />
            {/* Emplacement pour une photo d'ambiance type boudoir ou portrait artistique */}
-           <div className="w-full h-full bg-[url('/images/background-story.jpg')] bg-cover bg-center grayscale" />
+           <div className="w-full h-full bg-[url('/images/1.jpeg')] bg-cover bg-center grayscale" />
         </div>
         
         <div className="relative z-10 text-center px-6">

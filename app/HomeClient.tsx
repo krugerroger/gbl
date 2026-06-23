@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Star } from "lucide-react";
+import { contacts } from "./data/contacts";
 
 export default function HomeClient() {
 
@@ -108,7 +109,7 @@ export default function HomeClient() {
             </p>
 
             <p className="border-b border-zinc-900 py-6">
-              Mes connaissances me disent sensuelle, pétillante, sexy, élégante, naturelle, joueuse, coquine et libertine. Une beauté méditerranéenne hispanique de 28 ans (1,65m, 60kg) avec qui vous passerez d’excellents moments.
+              Mes connaissances me disent sensuelle, pétillante, sexy, élégante, naturelle, joueuse, coquine et libertine. Une beauté méditerranéenne hispanique de 29 ans (1,60m, 51kg) avec qui vous passerez d’excellents moments.
             </p>
 
             <p className="border-b border-zinc-900 py-6 italic text-amber-500/90">
@@ -179,8 +180,8 @@ export default function HomeClient() {
         <div className="mt-16 flex flex-wrap items-center justify-center gap-4">
           {
           [
-            { label: "Telegram", url: "https://t.me/gabriellaindependante" }, 
-            { label: "WhatsApp", url: `https://wa.me/33780912442?text=${message}` },
+            { label: "Telegram", url: contacts.telegram }, 
+            { label: "WhatsApp", url: `${contacts.whatsapp}?text=${message}` },
           ].map((social) => (
             <SocialPill key={social.label} label={social.label} url={social.url} />
           ))}

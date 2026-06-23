@@ -7,6 +7,7 @@ import {
   MessageSquare, Upload, ExternalLink, AlertTriangle, 
   CheckCircle2, CreditCard, Mail, ChevronLeft, Sparkles, User, Check
 } from "lucide-react";
+import { contacts } from '../data/contacts';
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -183,22 +184,22 @@ export default function ReservationClient() {
             <section className="space-y-8">
               <h2 className="text-white text-xs uppercase tracking-[0.4em] font-sans font-bold">Contact Direct</h2>
               <div className="space-y-6">
-                <a href="tel:+33780912442" className="flex items-center gap-4 group">
+                <a href={contacts.whatsapp} className="flex items-center gap-4 group">
                   <div className="w-10 h-10 border border-zinc-900 flex items-center justify-center group-hover:border-amber-900 transition-colors">
                     <Phone size={16} className="text-amber-700" />
                   </div>
                   <div>
-                    <span className="block text-[10px] uppercase tracking-widest text-zinc-600 font-sans">Appel & SMS</span>
-                    <span className="text-white group-hover:text-amber-500 transition-colors tracking-widest">07 80 99 06 92</span>
+                    <span className="block text-[10px] uppercase tracking-widest text-zinc-600 font-sans">SMS & WhatsApp</span>
+                    <span className="text-white group-hover:text-amber-500 transition-colors tracking-widest">{contacts.phoneNumber}</span>
                   </div>
                 </a>
-                <a href="https://t.me/gabriellaindependante" className="flex items-center gap-4 group">
+                <a href={contacts.telegram} className="flex items-center gap-4 group">
                   <div className="w-10 h-10 border border-zinc-900 flex items-center justify-center group-hover:border-amber-900 transition-colors">
                     <MessageSquare size={16} className="text-amber-700" />
                   </div>
                   <div>
-                    <span className="block text-[10px] uppercase tracking-widest text-zinc-600 font-sans">Telegram / WhatsApp</span>
-                    <span className="text-white group-hover:text-amber-500 transition-colors italic">@Gabriellaindependante</span>
+                    <span className="block text-[10px] uppercase tracking-widest text-zinc-600 font-sans">Telegram</span>
+                    <span className="text-white group-hover:text-amber-500 transition-colors italic">{contacts.telegramUsername}</span>
                   </div>
                 </a>
               </div>
@@ -466,7 +467,7 @@ export default function ReservationClient() {
                 {/* Boutons de contact */}
                 <div className="grid sm:grid-cols-2 gap-4">
                   <a
-                    href={`https://wa.me/33780912442?text=${message}`}
+                    href={`${contacts.whatsapp}?text=${message}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 px-8 py-5 border border-zinc-900 hover:border-amber-900 text-white uppercase tracking-[0.3em] text-[10px] font-bold font-sans transition-all duration-300"
@@ -517,7 +518,7 @@ export default function ReservationClient() {
                   </div>
                   <div className="p-6 bg-amber-900/5 border border-amber-900/20 italic text-sm">
                     <p><strong>Option Discrétion :</strong> Achetez votre recharge en bureau de tabac ou en ligne, puis transmettez-la par whatsapp ou telegram avec vos disponibilités :</p>
-                    <p className="text-amber-700 mt-2 font-sans text-xs select-all"><a href={`https://wa.me/33780912442`} target="_blank" rel="noopener noreferrer" className="hover:text-amber-500">+33 7 80 91 24 42</a> | <a href="https://t.me/gabriellaindependante" target="_blank" rel="noopener noreferrer" className="hover:text-amber-500">@Gabriellaindependante</a></p>
+                    <p className="text-amber-700 mt-2 font-sans text-xs select-all"><a href={contacts.whatsapp} target="_blank" rel="noopener noreferrer" className="hover:text-amber-500">{contacts.phoneNumber}</a> | <a href={contacts.telegram} target="_blank" rel="noopener noreferrer" className="hover:text-amber-500">{contacts.telegramUsername}</a></p>
                   </div>
                 </div>
 
